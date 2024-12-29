@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/number-operations/number-operations/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-batch/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-jms/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-file-processing/pom.xml" />
+        <option value="$PROJECT_DIR$/library-management/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-react/pom.xml" />
+        <option value="$PROJECT_DIR$/sample-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-challange/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
