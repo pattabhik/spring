@@ -9,12 +9,15 @@ import com.app.blog.models.Users;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
 /**
  *
  * @author 1460344
  */
+@Component
 public class JWTUtils {
 
     public String CreateJWTToken(Users user) {
@@ -32,5 +35,20 @@ public class JWTUtils {
                 .compact();
 
         return token;
+    }
+
+    public boolean validateToken(String token) {
+        boolean isValid = false;
+        try {
+            Jwts.parser().setSigningKey(Constants.JWT_SECRET).parseClaimsJws(token);
+            isValid = true;
+        } catch (Exception e) {
+            isValid = false;
+        }
+        return isValid;
+    }
+
+    public Claims getClaims(String token) {
+        return Jwts.parser().setSigningKey(Constants.JWT_SECRET).parseClaimsJws(token).getBody();
     }
 }
